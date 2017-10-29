@@ -4,11 +4,7 @@
 
 WebHook 的概念很簡單，其實就是 HTTP 的 callback，當事件發生時，就送出一個 HTTP POST 的 request。
 
-
-
-  A web application implementing WebHooks will POST a message to a URL when certain things happen. When a web application enables users to register their own URLs, the users can then extend, customize, and integrate that application with their own custom extensions or even with other applications around the web. For the user, WebHooks are a way to receive valuable information when it happens, rather than continually polling for that data and receiving nothing valuable most of the time. WebHooks have enormous potential and are limited only by your imagination! (No, it can't wash the dishes. Yet.)
-
-   
+在 Web 應用程式上實作 WebHooks，就是當特定事物產生時發送一個 HTTP POST 的請求，裡面會夾帶一個訊息並送到某個特定的網址。當這個應用程式開放使用者註冊他們自己的網址，這些使用者就可以擴充、客製化及整合這個應用程式到他們自己的擴充服務，甚至是網路上的其他 Web 應用程式。對使用者來說，WebHooks 是一個獲得具有價值資訊的方式，而不像以前要持續地透過輪詢的方式來取得資訊，更何況這些資訊在絕大部分時間是沒有價值的。WebHooks 具有極大的潛力，只有你的想像力可以限制你自己。
 
    WebHooks are meant to do something. To get your imagination spinning with your own ideas, here are the three general ways in which WebHooks can be used to make your web more programmable:
 
