@@ -6,14 +6,13 @@ WebHook 的概念很簡單，其實就是 HTTP 的 callback，當事件發生時
 
 在 Web 應用程式上實作 WebHooks，就是當特定事物產生時發送一個 HTTP POST 的請求，裡面會夾帶一個訊息並送到某個特定的網址。當這個應用程式開放使用者註冊他們自己的網址，這些使用者就可以擴充、客製化及整合這個應用程式到他們自己的擴充服務，甚至是網路上的其他 Web 應用程式。對使用者來說，WebHooks 是一個獲得具有價值資訊的方式，而不像以前要持續地透過輪詢的方式來取得資訊，更何況這些資訊在絕大部分時間是沒有價值的。WebHooks 具有極大的潛力，只有你的想像力可以限制你自己。
 
-   WebHooks are meant to do something. To get your imagination spinning with your own ideas, here are the three general ways in which WebHooks can be used to make your web more programmable:
+WebHooks 意思就是拿來做一些事。為了讓你的 Web 應用程式更能程式化，這裡總共分成三個較常見的 WebHooks 型式：
 
-    
+* 推送服務：即時取得資料
 
-    Push: receiving data in real time
-    Push is the simplest of reasons to use WebHooks. As was just stated above, no more polling every couple of minutes to find out if there is new information. Just register a WebHook and receive the data at your doorstep as soon as it exists. It's less work, less hassle, and you'll probably even receive it sooner than if you were asking for it every couple of minutes.
+推送服務是用 WebHooks 最簡單的理由之一。如前所述，不用再透過每分鐘輪詢的方式確認是否有新資訊。只要註冊 WebHook 之後，收到資料時你馬上就會知道了。這不需要花太多工夫，也一點都不麻煩，而且你會發現取得資訊的速度比你以前每分鐘用輪詢的方式要快多了。
 
-     
+* 管線服務：取得資料然後送給其他服務
 
      Pipes: receiving data and passing it on
      A Pipe happens when your WebHook not only receives real-time data, but goes on to do something new and meaningful with it, triggering actions unrelated to the original event. For example, you create a script, register its URL at a photo site, and have it email you when your mother posts a new photo. Or make a script that creates a Twitter message, and have it triggered by a WebHook whenever you add a new product on your commerce website.
