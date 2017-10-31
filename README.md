@@ -10,14 +10,11 @@ WebHooks 意思就是拿來做一些事。為了讓你的 Web 應用程式更能
 
 * 推送服務：即時取得資料
 
-推送服務是用 WebHooks 最簡單的理由之一。如前所述，不用再透過每分鐘輪詢的方式確認是否有新資訊。只要註冊 WebHook 之後，收到資料時你馬上就會知道了。這不需要花太多工夫，也一點都不麻煩，而且你會發現取得資訊的速度比你以前每分鐘用輪詢的方式要快多了。
+「推送服務」是用 WebHooks 最簡單的理由之一。如前所述，不用再透過每分鐘輪詢的方式確認是否有新資訊。只要註冊 WebHook 之後，有新資料時就會馬上知道。這不需要花太多工夫，也一點都不麻煩，而且你會發現取得資訊的速度比以前每分鐘用輪詢的方式要快多了。
 
 * 管線服務：取得資料然後送給其他服務
 
-     Pipes: receiving data and passing it on
-     A Pipe happens when your WebHook not only receives real-time data, but goes on to do something new and meaningful with it, triggering actions unrelated to the original event. For example, you create a script, register its URL at a photo site, and have it email you when your mother posts a new photo. Or make a script that creates a Twitter message, and have it triggered by a WebHook whenever you add a new product on your commerce website.
-
-      
+WebHook 不只可以用來傳遞即時資料，也可以用這份資料觸發一些與原本事件無關的動作，這就叫做「管線服務」。比如說可以註冊 Webhook 到相簿網站上，然後當你老媽上傳一張新相片到網站上就發電子郵件通知你。或是當你在你的電商網站新增了一個新商品時，即時透過 Twitter 發一則新訊息。
 
       Plugins: processing data and giving something in return
       This is where the entire web becomes a programming platform. You can use this form of WebHooks to allow others to extend your application. Facebook's Application Platform uses WebHooks in this way, and so does Google Wave's robot integration. The general idea is that a web application sending out data via WebHooks will also use the response to modify its own data. At Facebook, when you access an app, Facebook sends a WebHook out to your application saying "Hey, someone's accessing your application, what do I do?!" The application responds with, "Show the user this page..." Facebook does so, and the pattern continues in the same manner as you continue to use the application. At Google Wave, when you do something in a wave, any robot you've added as a participant is notified via a WebHook, and the robot has the ability to modify the wave in its http response. Implement WebHooks in this way in your application if you want to allow others to truly extend and enhance the abilities of your application.
