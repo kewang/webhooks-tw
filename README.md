@@ -14,14 +14,15 @@ WebHooks 意思就是拿來做一些事。為了讓你的 Web 應用程式更能
 
 * 管線服務：取得資料然後送給其他服務
 
-WebHook 不只可以用來傳遞即時資料，也可以用這份資料觸發一些與原本事件無關的動作，這就叫做「管線服務」。比如說可以註冊 Webhook 到相簿網站上，然後當你老媽上傳一張新相片到網站上就發電子郵件通知你。或是當你在你的電商網站新增了一個新商品時，即時透過 Twitter 發一則新訊息推銷出去。
+WebHook 不只可以用來傳遞即時資料，也可以用這份資料觸發一些與原本事件無關的動作，這就叫做「管線服務」。比如說可以註冊 WebHook 到相簿網站上，然後當你老媽上傳一張新相片到網站上就發電子郵件通知你。或是當你在你的電商網站新增了一個新商品時，即時透過 Twitter 發一則新訊息推銷出去。
 
 * 外掛程式：處理資料後將資料返回
 
 這就是把整個網路服務變成一個可程式化的平台。可以讓其他使用者用外掛程式來擴充你的應用程式。Facebook Application Platform 及 Google Wave 就是用這種方式來整合他們自己的服務。作法就是將 Web 應用程式的資料透過 WebHooks 送出去，然後把 response 取回來改變自己的資料。以 Facebook 為例，當你要存取 Facebook 上的某個應用程式時，Facebook 會送出一個 WebHook 並且通知應用程式「哈囉，有人要存取你的應用程式囉，我該怎麼做才好？」，應用程式就會請 Facebook 把使用者的資訊顯示在這一頁。而 Google Wave 則是當你在 wave 上面做任何動作時，你所加入的所有機器人協作者都會透過 Webhook 的方式收到通知，而且機器人可以變更這個 wave 的 response。如果你想要允許其他使用者合法地擴充且增加 Web 應用程式時，用「外掛程式」來處理是一個比較好的方式。
 
-       How do they work?
-       By letting the user specify a URL for various events, the application will POST data to those URLs when the events occur. With the cheap availability of PHP hosting and even easier simple app/script hosting like AppJet or Scriptlets, handling the POST data becomes fairly trivial. How you use it is up to you and whatever you want to accomplish. Among other things, you can:
+## WebHook 的運作方式為何？
+
+By letting the user specify a URL for various events, the application will POST data to those URLs when the events occur. With the cheap availability of PHP hosting and even easier simple app/script hosting like AppJet or Scriptlets, handling the POST data becomes fairly trivial. How you use it is up to you and whatever you want to accomplish. Among other things, you can:
 
         
 
