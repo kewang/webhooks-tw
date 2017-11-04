@@ -22,15 +22,12 @@ WebHook 不只可以用來傳遞即時資料，也可以用這份資料觸發一
 
 ## WebHook 的運作方式為何？
 
-By letting the user specify a URL for various events, the application will POST data to those URLs when the events occur. With the cheap availability of PHP hosting and even easier simple app/script hosting like AppJet or Scriptlets, handling the POST data becomes fairly trivial. How you use it is up to you and whatever you want to accomplish. Among other things, you can:
+Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，當事件發生時應用程式就會將資料使用 POST 的方式傳送給這些特定網址。而現在許多便宜的 PHP 主機甚至可以使用 AppJet 或 Scriptlets 這類腳本語言，讓 POST 資料變的更簡單。你要如何做這些事情一切都由你自己決定，除此之外你也可以完成下列各種動作：
 
-        
-
-        create notifications to you or anybody via email, IRC, Jabber, ...
-        put the data in another app (real-time data synchronization)
-        process the data and repost it using the app's API
-        validate the data and potentially prevent it from being used by the app
-         
+* 透過電子郵件、聊天室產生提醒給你
+* 發送資料到另一個應用程式 (即時資料同步)
+* 處理資料而且重新用 API 發送這些資料到另一個應用程式
+* 驗證且保護這些資料，防止被其他應用程式所使用
 
          Why should I care?
          As integrated as we perceive the web, most web applications today operate in silos. With the rise of API's we've seen mashups and some degree of integration between applications. However, we have not seen the vision of the programmable web: a web where you as the user can "pipe" data between apps much like the Unix command line. Some say RSS is the answer. They are wrong. The heart is in the right place, but the implementation is wrong. RSS is still useful, but it is not going to bring us the true programmable web.
