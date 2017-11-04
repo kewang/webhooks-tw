@@ -6,17 +6,17 @@ WebHook 的概念很簡單，其實就是 HTTP 的 callback，當事件發生時
 
 在 Web 應用程式上實作 WebHooks，就是當特定事物產生時發送一個 HTTP POST 的請求，裡面會夾帶一個訊息並送到某個特定的網址。當這個應用程式開放使用者註冊他們自己的網址，這些使用者就可以擴充、客製化及整合這個應用程式到他們自己的擴充服務，甚至是網路上的其他 Web 應用程式。對使用者來說，WebHooks 是一個獲得具有價值資訊的方式，而不像以前要持續地透過輪詢的方式來取得資訊，更何況這些資訊在絕大部分時間是沒有價值的。WebHooks 具有極大的潛力，只有你的想像力可以限制你自己。
 
-WebHooks 意思就是拿來做一些事。為了讓你的 Web 應用程式更能程式化，這裡總共分成三個較常見的 WebHooks 型式：
+WebHooks 意思就是拿來做一些事。為了讓你的 Web 應用程式更能程式化，下面分成三個較常見的 WebHooks 型式。
 
-* 推送服務：即時取得資料
+### 推送服務：即時取得資料
 
 「推送服務」是用 WebHooks 最簡單的理由之一。如前所述，不用再透過每分鐘輪詢的方式確認是否有新資訊。只要註冊 WebHook 之後，有新資料時就會馬上知道。這不需要花太多工夫，也一點都不麻煩，而且你會發現取得資訊的速度比以前每分鐘用輪詢的方式要快多了。
 
-* 管線服務：取得資料然後送給其他服務
+### 管線服務：取得資料然後送給其他服務
 
 WebHook 不只可以用來傳遞即時資料，也可以用這份資料觸發一些與原本事件無關的動作，這就叫做「管線服務」。比如說可以註冊 WebHook 到相簿網站上，然後當你老媽上傳一張新相片到網站上就發電子郵件通知你。或是當你在你的電商網站新增了一個新商品時，即時透過 Twitter 發一則新訊息推銷出去。
 
-* 外掛程式：處理資料後將資料返回
+### 外掛程式：處理資料後將資料返回
 
 這就是把整個網路服務變成一個可程式化的平台。可以讓其他使用者用外掛程式來擴充你的應用程式。Facebook Application Platform 及 Google Wave 就是用這種方式來整合他們自己的服務。作法就是將 Web 應用程式的資料透過 WebHooks 送出去，然後把 response 取回來改變自己的資料。以 Facebook 為例，當你要存取 Facebook 上的某個應用程式時，Facebook 會送出一個 WebHook 並且通知應用程式「哈囉，有人要存取你的應用程式囉，我該怎麼做才好？」，應用程式就會請 Facebook 把使用者的資訊顯示在這一頁。而 Google Wave 則是當你在 wave 上面做任何動作時，你所加入的所有機器人協作者都會透過 Webhook 的方式收到通知，而且機器人可以變更這個 wave 的 response。如果你想要允許其他使用者合法地擴充且增加 Web 應用程式時，用「外掛程式」來處理是一個比較好的方式。
 
@@ -29,7 +29,8 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 * 處理資料而且重新用 API 發送這些資料到另一個應用程式
 * 驗證且保護這些資料，防止被其他應用程式所使用
 
-         Why should I care?
+## 為什麼我應該要開始在意 WebHook？
+
          As integrated as we perceive the web, most web applications today operate in silos. With the rise of API's we've seen mashups and some degree of integration between applications. However, we have not seen the vision of the programmable web: a web where you as the user can "pipe" data between apps much like the Unix command line. Some say RSS is the answer. They are wrong. The heart is in the right place, but the implementation is wrong. RSS is still useful, but it is not going to bring us the true programmable web.
 
           
