@@ -31,6 +31,8 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 
 ## 為什麼我應該要開始在意 WebHook？
 
+我們開始在網路上察覺到整合這件事，大部分的 Web 應用程式到現在都還是閉門造車，自己玩自己的。再加上 API 的盛行，我們看到許多混搭及互相整合的應用程式。但是
+
          As integrated as we perceive the web, most web applications today operate in silos. With the rise of API's we've seen mashups and some degree of integration between applications. However, we have not seen the vision of the programmable web: a web where you as the user can "pipe" data between apps much like the Unix command line. Some say RSS is the answer. They are wrong. The heart is in the right place, but the implementation is wrong. RSS is still useful, but it is not going to bring us the true programmable web.
 
           
