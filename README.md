@@ -33,7 +33,7 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 
 我們開始察覺網路也可以做整合，大部分的 Web 應用程式到現在都還是閉門造車，自己玩自己的。再加上 API 的盛行，我們看到許多混搭及互相整合的應用程式。但是我們還沒發現可程式化網路的美景：一個可以讓使用者在 Web 應用程式之間傳送資料的網路，就像是 Unix 命令列模式一樣。有些人說 RSS 就是解答，**但是他們錯了**。RSS 的核心價值沒錯，但是實作方式是錯的。RSS 還是非常有用，但它沒辦法幫我們帶來一個真正的可程式化網路。
 
-我們只需要一個簡便的方式讓使用者能夠很簡單地即時取得他們想要的任何資料。這表示不用輪詢機制、沒有任何內容限制，也不需解析 XML。這表示答案根本就不是 RSS。HTTP 愈來愈簡易使用。PHP 是一個非常受歡迎而且容易取得的程式開發環境，所以非常適合用來撰寫 hooklets，在 PHP 上面從 POST 請求取得資料就像取得 $_POST['something'] 一樣簡單。而且建立一個請求到使用者的腳本就跟建立一個 HTTP 請求一樣簡單，在大部分的程式開發環境也都已經內建了。事實上，Web hooks 比實作 API 還要簡單。
+我們只需要一個簡便的方式讓使用者能夠很簡單地即時取得他們想要的任何資料。這表示不用輪詢機制、沒有任何內容限制，也不需解析 XML。這表示答案根本就不是 RSS。HTTP 愈來愈簡易使用。PHP 是一個非常受歡迎而且容易取得的程式開發環境，所以非常適合用來撰寫 hooklets，在 PHP 上面從 POST 請求取得資料就像取得 `$_POST['something']` 一樣簡單。而且建立一個請求到使用者的腳本就跟建立一個 HTTP 請求一樣簡單，在大部分的程式開發環境也都已經內建了。事實上，Web hooks 比實作 API 還要簡單。
 
           We just need a simple way to get data out in real-time to let the user easily do whatever they want with it. That means no polling, no content constraints, and no XML parsing. That means no RSS. Using HTTP is simpler and easier to use. PHP is a very popular and accessible programming environment, so it's likely to be used often for writing hooklets... getting data from a web POST in PHP is as simple as $_POST['something']. And making the request to the user script is as simple as making an HTTP request, something already built-in to most programming environments. In fact, web hooks are easier to implement than an API.
 
