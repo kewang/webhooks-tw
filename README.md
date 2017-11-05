@@ -41,12 +41,11 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 
 只要你的使用者可以簡易的將他們的網址送到你的應用程式，而且當某個事件發生時可以把資料使用 POST 請求送到這個網址就行了。非常簡單。不必遵循什麼特定的規格。
 
-             No Specs?!
-             While there are currently no standards defined for WebHooks, there are groups working to define guidelines that may one day evolve into standards. Each of these standards should apply to different types of needs, or lighter vs comprehensive implementations. Check out the following pages for various suggestions and implementation guidelines, and be sure to share your opinion/experience with us. If you have a bad experience with one of these suggestions, or you had to tweak your design a bit, then join in the conversation to improve the spec!
+### 真的沒有規格！？
 
-              
+到目前為止還沒有一個針對 WebHooks 的標準，現在有許多組織正在定義指南，或許有一天這些指南會逐步形成一個標準。這每個標準都應該可以用在不同的需求，或是簡單及廣泛的實作。大家可以看看下面這個對不同建議及實作指南的網頁，而且一定要把你的意見或經驗分享給我們。如果你在使用這些建議有一些不好的體驗，或是你覺得這些建議可以做一些調整的時候，快加入這個對話串一起來改善這份規格吧！
 
-              RESTful WebHooks
+* [RESTful WebHooks](https://webhooks.pbworks.com/w/page/13385128/RESTful%20WebHooks)
                
 
                Who is using web hooks?
