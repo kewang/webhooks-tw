@@ -46,71 +46,66 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 到目前為止還沒有一個針對 WebHooks 的標準，現在有許多組織正在定義指南，或許有一天這些指南會逐步形成一個標準。這每個標準都應該可以用在不同的需求，或是簡單及廣泛的實作。大家可以看看下面這個對不同建議及實作指南的網頁，而且一定要把你的意見或經驗分享給我們。如果你在使用這些建議有一些不好的體驗，或是你覺得這些建議可以做一些調整的時候，快加入這個對話串一起來改善這份規格吧！
 
 * [RESTful WebHooks](https://webhooks.pbworks.com/w/page/13385128/RESTful%20WebHooks)
-               
 
-               Who is using web hooks?
-               A number of people have started using web hooks. Some consciously, some out of pragmatism. And that's a good sign. Let's reinforce this pattern... implement web hooks and join this party.
+## 誰在使用 web hooks？
 
-                
+已經有許多人使用過 web hooks 了。有些是有意識地，有些是出於實用主義。這通常是一個不錯的信號。讓我們一起來加入這個派對加強這個模式吧。
 
-                Assembla (project tracking)
-                BitBucket (mercurial commit notifications)
-                CallMyApp (API-based cron callback service)  
-                DevjaVu
-                Facebook App Platform (sort of)
-                Femtoo (content tracking and notification)
-                FreshBooks (accounting)
-                GitHub (git push notification)
-                Google Code
-                Jott
-                IMified
-                LiveDirectory.org (Next generation web - subscription & notification service)
-                Mailhook.org, SMTP2Web, Astrotrain
-                Notifixious
-                Papertrail (syslog & app log events)
-                PayPal (IPN)
-                PBwiki
-                ProjectLocker (git/svn commit notification)
-                Shopify (hosted shopping cart)
-                Spinn3r
-                SurveyGizmo
-                Twilio (phone calls)
-                Versionshelf
-                Wufoo (Web forms)
-                ZenDesk (ticketing)
-                you?
-                 
+* [Assembla](http://www.assembla.com/spaces/demostuff/webhook_tool) (project tracking)
+* [BitBucket](http://www.bitbucket.org/) (mercurial commit notifications)
+* [CallMyApp](http://callmyapp.com/) (API-based cron callback service)  
+* DevjaVu
+* Facebook App Platform (sort of)
+* [Femtoo](http://www.femtoo.com/) (content tracking and notification)
+* [FreshBooks](http://developers.freshbooks.com/blog/view/keep_in_sync_with_freshbooks_webhooks/) (accounting)
+* [GitHub](http://github.com/guides/post-receive-hooks) (git push notification)
+* [Google Code](http://code.google.com/p/support/wiki/PostCommitWebHooks)
+* Jott
+* [IMified](http://new.imified.com/developers/api)
+* [LiveDirectory.org](http://livedirectory.org/) (Next generation web - subscription & notification service)
+* Mailhook.org, SMTP2Web, Astrotrain
+* [Notifixious](http://notifixio.us/)
+* [Papertrail](http://papertrailapp.com/) (syslog & app log [events](http://help.papertrailapp.com/kb/how-it-works/web-hooks))
+* PayPal ([IPN](https://www.paypal.com/ipn))
+* PBwiki
+* [ProjectLocker](http://blog.projectlocker.com/articles/2009/11/09/webhooks-land-at-projectlocker) (git/svn commit notification)
+* [Shopify](http://wiki.shopify.com/WebHook) (hosted shopping cart)
+* [Spinn3r](http://spinn3r.com/)
+* [SurveyGizmo](http://www.surveygizmo.com/survey-blog/communicate-external-database-http-post/)
+* [Twilio](http://www.twilio.com/) (phone calls)
+* [Versionshelf](http://www.versionshelf.com/)
+* [Wufoo](http://wufoo.com/2010/02/16/setup-webhooks-in-wufoo-to-get-push-notifications-to-your-apps/) (Web forms)
+* [ZenDesk](http://www.zendesk.com/api/targets) (ticketing)
+* 你？
 
-                 Who should be using web hooks?
-                 Online application platforms
-                 DabbleDB
-                 Coghead
-                 Salesforce
-                 Ning
-                 Remember the Milk (I just want to extend the todo app I use)
-                 Twitter (wants to anyway)
-                 Everybody...
-                  
+### 誰應該使用 web hooks？
 
-                  Some are even dabbling with implementing webhooks into Desktop applications.
+* 線上應用程式平台
+    * DabbleDB
+    * Coghead
+    * Salesforce
+    * Ning
+* 記得訂過的牛奶 (我只是想要擴展我使用的 todo 應用程式)
+* Twitter (可以用在任何地方)
+* 任何人...
 
-                   
+有一些甚至開始嘗試把 webhooks 用在桌面應用程式上了。
 
-                   Presentations
-                   Web Hooks - Slides and notes to a presentation I gave several places
-                   Web Hooks on PBwiki - Nathan's report on implementing web hooks on PBwiki
+## 投影片
+
+* [Web Hooks](http://www.slideshare.net/progrium/web-hooks) - 我在許多地方分享過這個投影片
+* [Web Hooks on PBwiki](http://www.slideshare.net/guest7e115a/web-hooks-on-pbwiki) - 南森在 PBwiki 針對如何實作 web hooks 的報告
                     
+## 有哪些人流行
 
-                    People catching on
-                    GetPingd
-                    Gnip
-                    Joshua Schachter
-                     
+* [GetPingd](http://groups.google.com/group/getpingd)
+* [Gnip](http://www.gnipcentral.com/)
+* [Joshua Schachter](http://joshua.schachter.org/2008/07/beyond-rest.html)
 
-                     Further reading
-                     Web hooks - The original post about web hooks in August 2006
-                     Let's make seeking bliss easier - A followup rant building on web hooks and other ideas
-                     Automator for the web - Where some of this stuff can go
-                      
+## 進一步閱讀
 
-                      Also check out webhooks.org for more up to date information on web hooks or the Google Group for discussion!
+* [Web hooks](http://blogrium.com/?p=70) - 在 2006 年 8 月最原始關於談論 web hooks 的文章
+* [Let's make seeking bliss easier](http://blogrium.com/2006/11/27/lets-make-seeking-bliss-easier/) - 一個大聲嚷嚷說要用 web hooks 及其他點子建置網路的文章
+* [Automator for the web](http://blogrium.com/2006/12/27/automator-for-the-web/) - 可以用 WebHooks 帶我們去任何地方的文章
+
+你也可以持續關注 [webhooks.org](http://webhooks.org/) 這個網站，取得更多關於 web hooks 的最新資訊，或是上 [Google Group](http://groups.google.com/group/webhooks) 一起討論吧！
