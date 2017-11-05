@@ -35,12 +35,11 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 
 我們只需要一個簡便的方式讓使用者能夠很簡單地即時取得他們想要的任何資料。這表示不用輪詢機制、沒有任何內容限制，也不需解析 XML。這表示答案根本就不是 RSS。HTTP 愈來愈簡易使用。PHP 是一個非常受歡迎而且容易取得的程式開發環境，所以非常適合用來撰寫 hooklets，在 PHP 上面從 POST 請求取得資料就像取得 `$_POST['something']` 一樣簡單。而且建立一個請求到使用者的腳本就跟建立一個 HTTP 請求一樣簡單，在大部分的程式開發環境也都已經內建了。事實上，Web hooks 比實作 API 還要簡單。
 
-不過在實作上有了對網路的輸出將會與愈來愈多人採納的 API 所提供的資料互補。當你有了輸入及輸出的資料時，你就有了所有可以與應用程式互動的東西。這會促進更小、更專注特定功能的應用程式與開啟 webhook 的多樣化應用程式一起協作，這會讓許多令人驚豔且新興的事件發生！
+不過在實作上有了對網路的**輸出**將會與愈來愈多人採納的 API 所提供的**輸入**資料互補。當你有了輸入及輸出的資料時，你就有了所有可以與應用程式互動的東西。這會促進更小、更專注特定功能的應用程式與開啟 webhook 的多樣化應用程式一起協作，這會讓許多令人驚豔且新興的事件發生！
 
-            How do I implement WebHooks?
-            Simply provide your users with the ability to submit their own URL, and POST to that URL when something happens. It's that simple. There are no specs you have to follow.
+## WebHooks 應該如何實作？
 
-             
+只要你的使用者可以簡易的將他們的網址送到你的應用程式，而且當某個事件發生時可以把資料使用 POST 請求送到這個網址就行了。非常簡單。不必遵循什麼特定的規格。
 
              No Specs?!
              While there are currently no standards defined for WebHooks, there are groups working to define guidelines that may one day evolve into standards. Each of these standards should apply to different types of needs, or lighter vs comprehensive implementations. Check out the following pages for various suggestions and implementation guidelines, and be sure to share your opinion/experience with us. If you have a bad experience with one of these suggestions, or you had to tweak your design a bit, then join in the conversation to improve the spec!
