@@ -18,7 +18,7 @@ WebHooks 意思就是拿來 _做_ 一些事。為了讓 _你_ 的 Web 應用程�
 
 ### 外掛程式：處理資料後將資料返回
 
-這就是把整個網路服務變成一個可程式化的平台。可以讓其他使用者用外掛程式來擴充你的應用程式。Facebook Application Platform 及 Google Wave 就是用這種方式來整合他們自己的服務。作法就是將 Web 應用程式的資料透過 WebHooks 送出去，然後把 response 取回來改變自己的資料。以 Facebook 為例，當你要存取 Facebook 上的某個應用程式時，Facebook 會送出一個 WebHooks 並且通知應用程式「哈囉，有人要存取你的應用程式囉，我該怎麼做才好？」，應用程式就會請 Facebook 把使用者的資訊顯示在這一頁。而 Google Wave 則是當你在 wave 上面做任何動作時，你所加入的所有機器人協作者都會透過 WebHooks 的方式收到通知，而且機器人可以變更這個 wave 的 response。如果你想要允許其他使用者合法地擴充且增加 Web 應用程式時，用「外掛程式」來處理是一個比較好的方式。
+這就是把全世界的網路變成一個可程式化的平台。可以讓其他使用者用外掛程式來擴充你的應用程式。Facebook Application Platform 及 Google Wave 就是用這種方式來整合他們自己的服務。作法就是將 Web 應用程式的資料透過 WebHooks 送出去，然後把 response 取回來改變自己的資料。以 Facebook 為例，當你要存取 Facebook 上的某個應用程式時，Facebook 會送出一個 WebHooks 並且跟應用程式說「哈囉，有人要存取你的應用程式囉，我該怎麼做才好？」，應用程式就會請 Facebook 把使用者的資訊顯示在這一頁。而 Google Wave 則是當你在 wave 上面做任何動作時，你所加入的所有機器人協作者都會透過 WebHooks 的方式收到通知，而且機器人可以變更這個 wave 的 response。如果你想要允許其他使用者合法地擴充且增加 Web 應用程式時，用「外掛程式」來處理是一個比較好的方式。
 
 ## WebHooks 的運作方式為何？
 
