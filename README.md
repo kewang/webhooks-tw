@@ -24,16 +24,16 @@ WebHooks 意思就是拿來 _做_ 一些事。為了讓 _你_ 的 Web 應用程�
 
 Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，當事件發生時應用程式就會將資料使用 POST 的方式傳送給這些特定網址。而現在許多便宜的 PHP 主機甚至可以使用 AppJet 或 Scriptlets 這類腳本語言，讓 POST 資料變的更簡單。你要如何做這些事情一切都由你自己決定，除此之外你也可以完成下列各種動作：
 
-* 透過電子郵件、聊天室產生提醒給你
+* 透過電子郵件或聊天室產生提醒給你
 * 發送資料到另一個應用程式 (即時資料同步)
 * 處理資料而且重新用 API 發送這些資料到另一個應用程式
 * 驗證且保護這些資料，防止被其他應用程式所使用
 
-## 為什麼我應該要開始在意 WebHook？
+## 為什麼我要開始在乎 WebHook？
 
 我們開始察覺網路也可以做整合，大部分的 Web 應用程式到現在都還是閉門造車，自己玩自己的。再加上 API 的盛行，我們看到許多混搭及互相整合的應用程式。但是我們還沒發現可程式化網路的美景：一個可以讓使用者在 Web 應用程式之間傳送資料的網路，就像是 Unix 命令列模式一樣。有些人說 RSS 就是解答，**但是他們錯了**。RSS 的核心價值沒錯，但是實作方式是錯的。RSS 還是非常有用，但它沒辦法幫我們帶來一個真正的可程式化網路。
 
-我們只需要一個簡便的方式讓使用者能夠很簡單地即時取得他們想要的任何資料。這表示不用輪詢機制、沒有任何內容限制，也不需解析 XML。這表示答案根本就不是 RSS。HTTP 愈來愈簡易使用。PHP 是一個非常受歡迎而且容易取得的程式開發環境，所以非常適合用來撰寫 hooklets，在 PHP 上面從 POST 請求取得資料就像取得 `$_POST['something']` 一樣簡單。而且建立一個請求到使用者的腳本就跟建立一個 HTTP 請求一樣簡單，在大部分的程式開發環境也都已經內建了。事實上，Web hooks 比實作 API 還要簡單。
+我們只需要一個簡便的方式讓使用者能夠很簡單地即時取得他們想要的任何資料。這表示不用輪詢機制、沒有任何內容限制，也不需解析 XML。這表示答案根本就不是 RSS。使用 HTTP 愈來愈容易。PHP 是一個非常受歡迎而且容易取得的程式開發環境，所以非常適合用來撰寫 hooklets，在 PHP 上面從 POST 請求取得資料就像取得 `$_POST['something']` 一樣簡單。而且建立一個請求到使用者的腳本就跟建立一個 HTTP 請求一樣簡單，在大部分的程式開發環境也都已經內建了。事實上，WebHooks 比實作 API 還要簡單。
 
 不過在實作上有了對網路的**輸出**將會與愈來愈多人採納的 API 所提供的**輸入**資料互補。當你有了輸入及輸出的資料時，你就有了所有可以與應用程式互動的東西。這會促進更小、更專注特定功能的應用程式與開啟 WebHooks 的多樣化應用程式一起協作，這會讓許多令人驚豔且新興的事件發生！
 
@@ -47,9 +47,9 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 
 * [RESTful WebHooks](https://webhooks.pbworks.com/w/page/13385128/RESTful%20WebHooks)
 
-## 誰在使用 web hooks？
+## 誰在使用 WebHooks？
 
-已經有許多人使用過 web hooks 了。有些是有意識地，有些是出於實用主義。這通常是一個不錯的信號。讓我們一起來加入這個派對加強這個模式吧。
+已經有許多人使用過 WebHooks 了。有些是有意識地，有些是出於實用主義。這通常是一個不錯的信號。讓我們一起來加入這個派對加強這個模式吧。
 
 * [Assembla](http://www.assembla.com/spaces/demostuff/webhook_tool) (project tracking)
 * [BitBucket](http://www.bitbucket.org/) (mercurial commit notifications)
@@ -78,7 +78,7 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 * [ZenDesk](http://www.zendesk.com/api/targets) (ticketing)
 * 你？
 
-### 誰應該使用 web hooks？
+### 誰應該使用 WebHooks？
 
 * 線上應用程式平台
     * DabbleDB
@@ -89,12 +89,12 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 * Twitter (可以用在任何地方)
 * 任何人...
 
-有一些甚至開始嘗試把 webhooks 用在桌面應用程式上了。
+有一些甚至開始嘗試把 WebHooks 用在桌面應用程式上了。
 
 ## 投影片
 
 * [Web Hooks](http://www.slideshare.net/progrium/web-hooks) - 我在許多地方分享過這個投影片
-* [Web Hooks on PBwiki](http://www.slideshare.net/guest7e115a/web-hooks-on-pbwiki) - 南森在 PBwiki 針對如何實作 web hooks 的報告
+* [Web Hooks on PBwiki](http://www.slideshare.net/guest7e115a/web-hooks-on-pbwiki) - 南森在 PBwiki 針對如何實作 WebHooks 的報告
                     
 ## 有哪些人流行
 
@@ -104,8 +104,8 @@ Web 應用程式可以讓使用者自行將特定網址關聯到各種事件，�
 
 ## 進一步閱讀
 
-* [Web hooks](http://blogrium.com/?p=70) - 在 2006 年 8 月最原始關於談論 web hooks 的文章
-* [Let's make seeking bliss easier](http://blogrium.com/2006/11/27/lets-make-seeking-bliss-easier/) - 一個大聲嚷嚷說要用 web hooks 及其他點子建置網路的文章
+* [Web hooks](http://blogrium.com/?p=70) - 在 2006 年 8 月最原始關於談論 WebHooks 的文章
+* [Let's make seeking bliss easier](http://blogrium.com/2006/11/27/lets-make-seeking-bliss-easier/) - 一個大聲嚷嚷說要用 WebHooks 及其他點子建置網路的文章
 * [Automator for the web](http://blogrium.com/2006/12/27/automator-for-the-web/) - 可以用 WebHooks 帶我們去任何地方的文章
 
-你也可以持續關注 [webhooks.org](http://webhooks.org/) 這個網站，取得更多關於 web hooks 的最新資訊，或是上 [Google Group](http://groups.google.com/group/webhooks) 一起討論吧！
+你也可以持續關注 [webhooks.org](http://webhooks.org/) 這個網站，取得更多關於 WebHooks 的最新資訊，或是上 [Google Group](http://groups.google.com/group/webhooks) 一起討論吧！
